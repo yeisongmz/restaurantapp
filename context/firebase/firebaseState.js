@@ -1,9 +1,9 @@
 import React, {useReducer} from 'react';
 
-import { FirebaseReducer } from "./firebaseReducer";
-import { FirebaseContext } from "./firebaseContext";
+import  FirebaseReducer  from "./firebaseReducer";
+import  FirebaseContext  from "./firebaseContext";
 
-const FirebaseState = props =>{
+const FirebaseState = props => {
     
     // Crear state inicial
     const initialState = {
