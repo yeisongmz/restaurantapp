@@ -1,10 +1,14 @@
 import React, {useReducer} from 'react';
 
+import firebase from '../../firebase';
+
 import  FirebaseReducer  from "./firebaseReducer";
 import  FirebaseContext  from "./firebaseContext";
 
 const FirebaseState = props => {
     
+    console.log(firebase);
+
     // Crear state inicial
     const initialState = {
         menu: []
