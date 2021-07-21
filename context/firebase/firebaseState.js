@@ -20,7 +20,8 @@ const FirebaseState = props => {
     return(
         <FirebaseContext.Provider
             value={{
-                menu: state.menu
+                menu: state.menu,
+                firebase
             }}
         >
             {props.children}
