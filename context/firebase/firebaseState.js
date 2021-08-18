@@ -36,7 +36,7 @@ const FirebaseState = props => {
                         ...doc.data()
                     }
                 });
-                console.log(platillos);
+                //console.log(platillos);
 
                 dispatch({
                     type: OBTENER_PRODUCTOS_EXITO,
