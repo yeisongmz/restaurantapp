@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-
+import {NativeBaseProvider} from 'native-base'
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
@@ -20,6 +20,7 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <>
+    
       <FirebaseState>
         <PedidoState>
           <NavigationContainer>
@@ -33,7 +34,7 @@ const App = () => {
                 },
               }}>
               <Stack.Screen
-                name="Nueva Orden"
+                name="NuevaOrden"
                 component={NuevaOrden}
                 options={{
                   title: 'Nueva Orden',
@@ -47,28 +48,28 @@ const App = () => {
                 }}
               />
               <Stack.Screen
-                name="Detalle Platillo"
+                name="DetallePlatillo"
                 component={DetallePlatillo}
                 options={{
                   title: 'Detalle Platillo',
                 }}
               />
               <Stack.Screen
-                name="Formulario Platillo"
+                name="FormularioPlatillo"
                 component={FormularioPlatillo}
                 options={{
                   title: 'Formulario Platillo',
                 }}
               />
               <Stack.Screen
-                name="Resumen Pedido"
+                name="ResumenPedido"
                 component={ResumenPedido}
                 options={{
                   title: 'Resumen Pedido',
                 }}
               />
               <Stack.Screen
-                name="Progreso Pedido"
+                name="ProgresoPedido"
                 component={ProgresoPedido}
                 options={{
                   title: 'Progreso Pedido',
@@ -78,6 +79,7 @@ const App = () => {
           </NavigationContainer>
         </PedidoState>
       </FirebaseState>
+      
     </>
   );
 };
