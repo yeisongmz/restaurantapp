@@ -14,7 +14,25 @@ const globalStyles = StyleSheet.create({
     botonTexto: {
         textTransform: 'uppercase',
         fontWeight: 'bold',
-        color: '#000'
+        color: '#000',
+        fontSize: 15
+
+    },
+    titulo: {
+        textAlign: 'center',
+        marginTop: 40,
+        marginBottom: 20,
+        fontSize: 30
+    },
+    imagen: {
+        height: 300,
+        width: '100%'
+    },
+    precio: {
+        fontWeight: 'bold',
+        marginVertical: 20,
+        textAlign: 'center',
+        fontSize: 24
     }
 })
 
