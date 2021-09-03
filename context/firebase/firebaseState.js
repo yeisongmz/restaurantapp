@@ -13,7 +13,7 @@ const FirebaseState = props => {
 
     // Crear state inicial
     const initialState = {
-        menu: []
+        menu: [],
     }
 
     //usereducer con dispatch
@@ -50,7 +50,7 @@ const FirebaseState = props => {
             }
     }
 
-
+    
     
 
     return(
@@ -58,7 +58,8 @@ const FirebaseState = props => {
             value={{
                 menu: state.menu,
                 firebase,
-                obtenerProductos
+                obtenerProductos,
+                
             }}
         >
             {props.children}

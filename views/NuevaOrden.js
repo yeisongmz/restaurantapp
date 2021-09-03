@@ -9,21 +9,17 @@ const NuevaOrden = () => {
 
   return (
     <Container style={globalStyles.contenedor}>
-        <Content>
-          <H1 style={globalStyles.titulo}>Hola</H1>
-        </Content>
-        
-        <Footer>
-                <FooterTab>
-                    <Button style={globalStyles.boton} 
-                        onPress={()=>{
-                            navigation.navigate('Menu')
-                        }}
-                    >
+        <View style={[globalStyles.contenido, styles.contenido]}>
+          
+          <Button style={globalStyles.boton} 
+                  onPress={()=>{navigation.navigate('Menu')}}
+                  full
+                  >
                         <Text style={globalStyles.botonTexto}>Nueva Orden</Text>
                     </Button>
-                </FooterTab>
-            </Footer>
+        </View>
+        
+        
     </Container>
   );
 };
